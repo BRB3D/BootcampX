@@ -1,8 +1,10 @@
 const { Pool } = require('pg');
 
+const { password } = require('./pas');
+
 const pool = new Pool({
   user: 'labber',
-  password: '1',
+  password: password,
   port: 5432,
   host: 'localhost',
   database: 'bootcampx'
